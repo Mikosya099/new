@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BuzzTalk - Modern and Stylish English Learning Platform">
+    <title>BuzzTalk - Teachers and Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f8f8f8, #ffffff);
+            color: #a76262;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 60px;
+            background: #2c05db;
+            color: rgb(253, 253, 253);
+            position: relative;
+        }
+
+        header .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        /* Видео-логотип */
+        .video-logo {
+            width: 200px; /* Размер видео */
+            height: 200px;
+            border-radius: 50%; /* Закругление, если нужно */
+            overflow: hidden;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #FFC107;
+        }
+
+        header h1 {
+            font-size: 3em;
+            animation: buzz-animation 2s infinite;
+        }
+
+        @keyframes buzz-animation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .hymn {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #f9f8fa;
+            font-style: italic;
+        
+        }
+
+        .highlight {
+            color: #f7f7f7;
+            font-weight: bold;
+        }
+
+        /* Teachers Section Styles */
+        .teachers-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px;
+            background: #f0f1f3;
+            border-top: 5px solid #9b1010;
+        }
+
+        .teacher-card {
+            background: rgb(252, 251, 251);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(155, 4, 4, 0.2);
+            text-align: center;
+            width: 350px;
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(160, 2, 2, 0.3);
+        }
+
+        .teacher-photo {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 3px solid #771111;
+        }
+
+        .teacher-card h2 {
+            margin: 20px 0 10px;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .teacher-card p {
+            font-size: 1em;
+            padding: 0 20px 20px;
+            color: #666;
+        }
+
+        /* Button Style */
+        .check-level-btn {
+            display: inline-block;
+            padding: 20px 40px;
+            margin: 50px auto;
+            font-size: 1.4em;
+            background: #FFC107;
+            color: #750404;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .check-level-btn:hover {
+            background: #dd0404;
+            transform: scale(1.1);
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #2208b4;
+            color: rgb(254, 253, 255);
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 5px solid #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Вставка видео вместо логотипа -->
+            <video class="video-logo" autoplay loop muted>
+                <source src="static/images/лого.mp4" type="video/mp4"> <!-- Путь к вашему видео -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h1>BuzzTalk, where we thrive, Every word alive</h1>
+        <div class="hymn">
+            BuzzTalk, let’s connect,<br>
+            Voices intersect.<br>
+            Buzzing through barriers, breaking the block,<br>
+            This is the rhythm of <span class="highlight">BuzzTalk!</span>
+        </div>
+    </header>
+
+    <!-- Teachers Section -->
+    <section class="teachers-container">
+        <!-- Teacher Card 1 -->
+        <div class="teacher-card">
+            <a href="https://ltdfoto.ru/image/hThFBd" target="_blank">
+                <img src="static/images/merei.jpg" alt="Teacher Merei" class="teacher-photo">
+            </a>
+            <h2>Merey</h2>
+            <p>Kazhik Merey Kanatova
+                Certified level:Advanced level (C1)
+                More than 5 years of experience
+                Student education (from 12-30)
+                Individual approach</p>
+        </div>
+
+        <!-- Teacher Card 2 -->
+        <div class="teacher-card">
+            <a href="https://ltdfoto.ru/image/hTh3Ri" target="_blank">
+                <img src="static/images/zhanel.jpg" alt="Teacher Zhanel" class="teacher-photo">
+            </a>
+            <h2>Zhanel</h2>
+            <p>Sabeukhanova Zhanel Ardakkyzy
+                Certified level:Advanced level (C1)
+                More than 5 years of experience
+                Student education (from 12-30)
+                Individual approach </p>
+        </div>
+    </section>
+
+    <!-- Check Level Button -->
+    <div style="text-align: center;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNcY_vqTbgHy1AmpvOI4WPj2t6S7vwuuhE4oJIFOqIVkxfUA/viewform?usp=sf_link" class="check-level-btn">Check Your English Level Now</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 BuzzTalk. All rights reserved.
+    </footer>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuzzTalk Contacts</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            background: #F8F8F8;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Стили секции контактов */
+        .contact-section {
+            text-align: center;
+            padding: 50px;
+            background: #282C35;
+            color: white;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        /* Стили для иконок социальных сетей */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 2em;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Стили для контактных номеров */
+        .contact-numbers {
+            margin: 30px 0;
+        }
+
+        .contact-numbers p {
+            font-size: 1.5em;
+        }
+
+        /* Стили для QR-кодов */
+        .qr-codes {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .qr-codes img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <!-- Подключение иконок FontAwesome для соцсетей -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Секция контактов -->
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+
+        <!-- Социальные сети -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- Контактные номера -->
+        <div class="contact-numbers">
+            <p>📞 +7 778 466 30 59</p>
+            <p>📞 +7 776 820 32 98</p>
+        </div>
+
+        <!-- QR-коды -->
+        <div class="qr-codes">
+            <img src="static/images/WhatsApp Image 2024-09-27 at 02.23.27.jpeg" alt="QR Code 1">
+            <img src="static/images/WhatsApp Image 2024-09-27 at 02.22.48.jpeg" alt="QR Code 2">
+        </div>
+    </div>
+
+</body>
+</html>
